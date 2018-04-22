@@ -10,6 +10,7 @@ branches:
 
 install:
   - cinst docfx
+  - cinst wkhtmltopdf
 
 build_script:
   - docfx
