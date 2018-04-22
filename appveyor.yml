@@ -15,6 +15,9 @@ install:
 build_script:
   - docfx
 
+artifacts:
+  - path: '**\*.pdf'
+
 deploy_script:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:GITHUB_ACCESS_TOKEN):x-oauth-basic@github.com`n"
